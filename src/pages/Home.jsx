@@ -24,6 +24,7 @@ export function Home() {
                 slidesPerView={1}
                 autoplay={{ delay: 3000 }}
                 modules={[Autoplay]}
+                speed={1500}
                 initialSlide={0}
                 className="max-w-[1440px] max-h-[900px] mx-auto"
             >
