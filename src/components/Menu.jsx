@@ -1,4 +1,4 @@
-export function BurgerMenu() {
+export function Menu() {
     return (
         <>
         </>

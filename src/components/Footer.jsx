@@ -1,11 +1,26 @@
 export function Footer() {
-    return (
-        <footer>
-            <div className="font-['Futura'] font-bold max-w-[1440px] max-h-[900px] flex justify-start gap-10 mx-auto px-[40px] py-[34px]">
-                <a className="hover:text-green-700 transition delay-150 text-[#444444] text-[16px]" href="https://facebook.com">Facebook</a>
-                <a className="hover:text-green-700 transition delay-150 text-[#444444] text-[16px]" href="https://vk.com">Vkontakte</a>
-                <a className="hover:text-green-700 transition delay-150 text-[#444444] text-[16px]" href="https://behance.net">Behance</a>
-            </div>
-        </footer>
-    )
+  return (
+    <footer>
+      <div className="mx-auto flex max-h-[900px] max-w-[1440px] justify-start gap-10 px-[40px] py-[34px] font-['Futura'] font-bold md:max-xl:justify-between md:max-xl:gap-5 md:max-xl:w-1/2 md:max-xl:h-1/2">
+        <a
+          className="text-[16px] text-[#444444] transition delay-150 hover:text-green-700"
+          href="https://facebook.com"
+        >
+          Facebook
+        </a>
+        <a
+          className="text-[16px] text-[#444444] transition delay-150 hover:text-green-700"
+          href="https://vk.com"
+        >
+          Vkontakte
+        </a>
+        <a
+          className="text-[16px] text-[#444444] transition delay-150 hover:text-green-700"
+          href="https://behance.net"
+        >
+          Behance
+        </a>
+      </div>
+    </footer>
+  );
 }
