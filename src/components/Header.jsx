@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Search } from "./Search";
 import { motion } from "framer-motion";
+import { Menu } from "./Menu";
 
 export function Header({ defaultLanguage = "ENG" }) {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -25,7 +26,7 @@ export function Header({ defaultLanguage = "ENG" }) {
   };
 
   return (
-    <header>
+    <header className="relative">
       <div className="mx-auto flex max-h-[900px] w-full max-w-[1440px] items-center justify-between px-[30px] py-[30px]">
         <div className="flex items-center gap-4">
           <NavLink
@@ -133,6 +134,7 @@ export function Header({ defaultLanguage = "ENG" }) {
         </nav>
 
         {isSearchVisible && <Search onClose={handleClickSearch} />}
+        {isBurgerVisible && <Menu onClose={handleClickMenu} />}
       </div>
     </header>
   );
