@@ -27,7 +27,7 @@ export function Header({ defaultLanguage = "ENG" }) {
 
   return (
     <header className="relative">
-      <div className="mx-auto flex max-h-[900px] w-full max-w-[1440px] items-center justify-between px-[30px] py-[30px]">
+      <div className="mx-auto flex max-h-[900px] w-full max-w-[1440px] items-center justify-between px-[30px] py-[30px] sm:max-md:max-w-[640px]">
         <div className="flex items-center gap-4">
           <NavLink
             to="/"
@@ -59,7 +59,7 @@ export function Header({ defaultLanguage = "ENG" }) {
         <nav
           className={`flex items-center gap-4 ${isSearchVisible || isBurgerVisible ? "hidden" : ""}`}
         >
-          <ul className="flex items-center gap-8 font-['Futura'] text-sm text-gray-600 md:max-xl:hidden">
+          <ul className="flex items-center gap-8 font-['Futura'] text-sm text-gray-600 md:max-xl:hidden sm:max-md:hidden">
             <NavLink className="text-[16px] text-[#444444] transition delay-150 hover:text-green-700">
               About us
             </NavLink>

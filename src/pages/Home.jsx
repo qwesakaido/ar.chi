@@ -26,7 +26,7 @@ export function Home() {
         modules={[Autoplay]}
         speed={1500}
         initialSlide={0}
-        className="mx-auto max-h-[900px] max-w-[1440px] md:max-xl:max-h-[450px] md:max-xl:max-w-[720px]"
+        className="mx-auto max-h-[900px] max-w-[1440px] md:max-xl:max-h-[450px] md:max-xl:max-w-[720px] sm:max-md:max-w-[640px]"
       >
         {data.map((block) => (
           <SwiperSlide key={block.id}>
@@ -69,7 +69,7 @@ export function Home() {
                   </button>
                 </div>
               </div>
-              <div className="flex w-1/2 justify-end md:max-xl:hidden">
+              <div className="flex w-1/2 justify-end md:max-xl:hidden sm:max-md:hidden">
                 <img
                   src={imageOne}
                   alt="Decorative"

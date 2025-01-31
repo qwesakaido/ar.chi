@@ -7,7 +7,7 @@ export function Search({ onClose }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.3 }}
-      className="relative flex w-full max-w-lg items-center border border-gray-300 bg-gray-100 px-4 py-2 md:max-xl:w-1/2"
+      className="relative flex w-full max-w-lg items-center border border-gray-300 bg-gray-100 px-4 py-2 md:max-xl:w-1/2 sm:max-md:w-1/2"
     >
       <span className="mr-3 text-gray-400">
         <svg
